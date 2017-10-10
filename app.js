@@ -10,7 +10,7 @@ const getDataFromApi = (searchTerm, callback)=>{ //gets data from etsy API, pass
     searched = searchTerm; //the term the user writes into our input field.
     category = appState.category; //the category is updated using the updateCategory function, which takes in the value of the selected choice.
 
-    // the etsyURL, a url pieced together using template literals.
+    // the etsyURL, a url pieced together using template literals .
     etsyURL = `https://openapi.etsy.com/v2/listings/active.js?keywords=${searched}%20${category}&limit=16&includes=Images:1&api_key=${api_key}`;
 
 	$.ajax({
